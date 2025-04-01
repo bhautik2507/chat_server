@@ -18,7 +18,7 @@ A Node.js-based chat server that provides a RESTful API for managing conversatio
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/chat-server.git
+git clone https://github.com/bhautik2507/chat_server.git
 cd chat_server
 ```
 
