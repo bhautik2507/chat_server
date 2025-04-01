@@ -82,19 +82,8 @@ The application uses Node.js built-in cluster module to spawn worker processes, 
 
 Key features of the clustering implementation:
 
-1. **Master Process**: Manages worker processes and performs periodic cleanup of inactive conversations.
-
-2. **Worker Processes**: Handle API requests using the shared store.
-
-3. **Shared Memory**: A simplified implementation that works across processes for development purposes. In production, this would be replaced with Redis or a database.
-
-## Design Decisions
-
-1. **In-memory Storage**: The application uses JavaScript Maps for storing conversations and activity timestamps. This provides fast access and efficient operations.
-
-2. **Simple Shared Store**: For simplicity, we're using a shared module approach. In a production environment, this would be replaced with Redis, Memcached, or a database.
-
-3. **Separation of Concerns**: The code is organized into controllers, services, and utilities, with clear boundaries between different responsibilities.
+1. We have to distribute our traffic on node server.
+2. Using of cluster, we can make quick response for our application.
 
 ## Important Note
 
